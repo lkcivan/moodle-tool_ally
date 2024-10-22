@@ -52,7 +52,8 @@ function tool_ally_after_file_deleted($filerecord) {
 /**
  * Callback for after file created.
  * @param stdClass $filerecord
- */
+ * Deprecated. replaced by hooks 
+
 function tool_ally_after_file_created($filerecord) {
     $fs = get_file_storage();
     $file = $fs->get_file_instance($filerecord);
@@ -60,7 +61,9 @@ function tool_ally_after_file_created($filerecord) {
 
     cache::instance()->invalidate_file_keys($file);
 }
-
+ */ 
+ 
+ 
 /**
  * Callback for after file updated.
  * @param stdClass $filerecord
