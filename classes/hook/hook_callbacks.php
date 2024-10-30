@@ -20,14 +20,14 @@ namespace tool_ally;
  * Hook callbacks for tool_ally.
  *
  * @package   tool_ally
- * @author    Ivan Lam (lkcivan@gmail.com)
- * @copyright UCL
+ * @author    
+ * @copyright 
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class hook_callbacks {
 
 
-
+                                              
 	public static function after_file_created(core_files\hook\after_file_created $hook): void {
 		
 		$filerecord = $hook->$storedfile;

@@ -18,8 +18,8 @@
  * Hook callbacks for ally tool
  *
  * @package   tool_ally
- * @author    Ivan Lam (lkcivan@gmail.com)
- * @copyright UCL
+ * @author    
+ * @copyright 
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $callbacks = [
     [
-        'hook' => core\hook\filestorage\after_file_created::class,
-        'callback' => 'tool_ally\hook_callbacks::tool_ally_after_file_created',
+        'hook' => core_files\hook\after_file_created::class,
+        'callback' => 'tool_ally\hook_callbacks::after_file_created',
         'priority' => 0,
     ],
 ];
